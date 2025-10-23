@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화면 속 남자</title>
+    <style>
+        @font-face {
+            font-family: 'Ownglyph_corncorn-Rg';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2412-1@1.0/Ownglyph_corncorn-Rg.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body, html {
+            background-color: #1a1a1a;
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .content {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgb(255, 255, 255);
+            background-color: #ffffffd8;
+        }
+
+        p {
+            font-size: 20px;
+            font-family: 'Ownglyph_corncorn-Rg', sans-serif;
+        }
+
+        p:hover {
+            color: rgb(210, 34, 34);
+        }
+
+        button {
+            font-size: 18px;
+            font-family: 'Ownglyph_corncorn-Rg', sans-serif;
+            padding: 7px 10px;
+            border: 1px solid #ffffffd8;
+            border-radius: 5px;
+            background-color: #1a1a1a;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #fff;
+            color: #1a1a1a;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p>이 사이트는 "괴담에 떨어져도 출근을 해야 하는구나"를 보고 만든 페이지입니다.</p>
+        <p>221화까지의 스포일러가 포함되어 있습니다.</p>
+        <p>즐겨주시면 감사하겠습니다.</p><br>
+        <p><button onclick="openWindow()">화면 속 남자 만나러 가기</button></p>
+    </div>
+
+    <script>
+        function openWindow() {
+            window.open('title/title.html', 'newWindow', 'width=1001,height=706,scrollbars=no,resizable=no');
+        }
+    </script>
+</body>
+</html>

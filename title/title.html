@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화면 속 남자</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        .title-cnt {
+        position: relative;
+        }
+
+        .title-cnt img {
+        position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="title-cnt">
+        <img src="/img/title(cut).png" class="title" style="z-index: 5;">
+        <img id="target" src="/img/startbtn.png" class="startbtn" style="z-index: 4;">
+        <img src="/img/titleframe.png" class="titleframe" style="z-index: 3;">
+        <img src="/img/titleman.png" class="titleman" style="z-index: 2;">
+        <img src="/img/titleman(dup).png" class="titleman-dup" style="z-index: 2; display: none;">
+        <img src="/img/titlenoise.png" class="titlenoise" style="z-index: 1;">
+    </div>
+
+    <script>
+    const man = document.querySelector('.titleman');
+    const manDup = document.querySelector('.titleman-dup');
+    const target = document.getElementById('target');
+
+    function loop() {
+        man.style.display = 'block';
+        manDup.style.display = 'none';
+        setTimeout(() => {
+        man.style.display = 'none';
+        manDup.style.display = 'block';
+        setTimeout(loop, 150);
+        }, 1500);
+    }
+
+    loop();
+
+    target.addEventListener('click', (e) => {
+    const rect = target.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    console.log('clicked coords:', x, y);
+
+    if (x >= 298 && x <= 700 && y >= 422 && y <= 525) {
+        console.log('start button clicked!');
+        window.location.href = '../PC/pc.html'; 
+    }
+    });
+    </script>
+
+</body>
+</html>

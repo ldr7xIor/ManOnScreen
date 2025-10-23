@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>화면 속 남자</title>
+  <link rel="stylesheet" href="videos.css">
+</head>
+<body>
+    
+    <div class="videos-cnt">
+        <p class="chat" id="first" style="z-index: 5; display: none;">어라. 원래 이렇게까지 웃었던가?</p>
+        <p class="chat" id="second" style="z-index: 5; display: none;">기분 탓일까.<br>그렇다고 다시 돌아가서 확인하긴 귀찮네.</p>
+        <p class="chat" id="third" style="z-index: 5; display: none;">(남자를 클릭해서 삭제하자.)</p>
+
+        <p class="chat" id="fourth" style="z-index: 5; display: none;">기분 탓이겠지.</p>
+        <p class="chat" id="fifth" style="z-index: 5;">저녁에 일해서 침침한가? 눈도 이상해지네.</p>
+        
+        
+        <img src="/img/chatbar.png" style="z-index: 4;">
+        <img id="check" src="/img/check(family66).png" style="z-index: 3;">
+        <img id="off" src="/img/family66(off).png" style="z-index: 2;">
+        <img id="on" src="/img/family66(on).png" style="z-index: 2; display: none;">
+        <img src="/img/videoFrame.png" style="z-index: 1;">
+        <img src="/img/monitor.png" style="z-index: 0;">
+    </div>
+<script>
+    window.customClickableArea = { x1: 279, x2: 470, y1: 215, y2: 606 };
+</script>
+<script src="videos.js"></script>
+</body>
+</html>

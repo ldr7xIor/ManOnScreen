@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'RoundedFixedsys';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+  font-weight: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.pc-cnt {
+  position: relative;
+  width: 1000px;
+  height: 700px;
+}
+
+.pc-cnt img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.pc-cnt p {
+  position: absolute;
+  top: 475px;
+  left: 110px;
+}
+
+.chat {
+  font-family: 'RoundedFixedsys', monospace;
+  color: #1a1a1a;
+  font-size: 27px;
+  line-height: 40px;
+  display: none;
+  z-index: 3;
+}
+
+#letter {
+  opacity: 0;
+  transition: opacity 1.5s ease;
+  cursor: pointer;
+  z-index: 4;
+}
+
+#chatBar {
+  bottom: 0;
+  width: 100%;
+  transform: none;
+  left: 0;
+  top: auto;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#pc-off, #pc-on {
+  cursor: pointer;
+  z-index: 1;
+}

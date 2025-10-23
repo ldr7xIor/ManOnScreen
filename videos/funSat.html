@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>화면 속 남자</title>
+  <link rel="stylesheet" href="videos.css">
+</head>
+<body>
+    
+    <div class="videos-cnt">
+        <p class="chat" id="first" style="z-index: 5; display: none;">그런데... 어떻게 한 사람이 여러 방송에 계속 나오는 거지?</p>
+        <p class="chat" id="second" style="z-index: 5; display: none;">그것도 이렇게 따로 편집할 만큼?</p>
+        <p class="chat" id="third" style="z-index: 5; display: none;">(일단, 남자를 클릭해서 삭제하자.)</p>
+
+        <p class="chat" id="fourth" style="z-index: 5; display: none;">이렇게 많이 출연했다면, 유명인 아닌가?</p>
+        <p class="chat" id="fifth" style="z-index: 5;">나는 왜 처음보는 걸까. 이 업계에 짧게 있던 것도 아닌데</p>
+        
+        
+        <img src="/img/chatbar.png" style="z-index: 4;">
+        <img id="check" src="/img/check(funSat).png" style="z-index: 3;">
+        <img id="off" src="/img/funSat(off).png" style="z-index: 2;">
+        <img id="on" src="/img/funSat(on).png" style="z-index: 2; display: none;">
+        <img src="/img/videoFrame.png" style="z-index: 1;">
+        <img src="/img/monitor.png" style="z-index: 0;">
+    </div>
+<script>
+    window.customClickableArea = { x1: 600, x2: 672, y1: 224, y2: 459 };
+</script>
+<script src="videos.js"></script>
+</body>
+</html>

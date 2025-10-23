@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>화면 속 남자</title>
+  <link rel="stylesheet" href="videos.css">
+</head>
+<body>
+    
+    <div class="videos-cnt">
+        <p class="chat" id="first" style="z-index: 5; display: none;">브라운의 심야 토크쇼?<br>이 방송은 뭐지?</p>
+        <p class="chat" id="second" style="z-index: 5; display: none;">처음 보는데 좀 재밌네.<br>저 폭탄은 CG겠지? 엄청나다.</p>
+        <p class="chat" id="third" style="z-index: 5; display: none;">(남자를 클릭해서 삭제하자.)</p>
+
+        <p class="chat" id="fourth" style="z-index: 5; display: none;">내가 처음 보는 방송인데도 이 남자가 나오네.</p>
+        <p class="chat" id="fifth" style="z-index: 5;">무슨 사고라도 쳐서 편집하는 걸까? <br>하지만 뉴스에서도 보지 못했어.</p>
+        
+        
+        <img src="/img/chatbar.png" style="z-index: 4;">
+        <img id="check" src="/img/check(braun).png" style="z-index: 3;">
+        <img id="off" src="/img/braun(off).png" style="z-index: 2;">
+        <img id="on" src="/img/braun(on).png" style="z-index: 2; display: none;">
+        <img src="/img/videoFrame.png" style="z-index: 1;">
+        <img src="/img/monitor.png" style="z-index: 0;">
+    </div>
+<script>
+    window.customClickableArea = { x1: 556, x2: 691, y1: 426, y2: 608 };
+</script>
+<script src="videos.js"></script>
+</body>
+</html>

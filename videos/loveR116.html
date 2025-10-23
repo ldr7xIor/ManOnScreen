@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>화면 속 남자</title>
+  <link rel="stylesheet" href="videos.css">
+</head>
+<body>
+    
+    <div class="videos-cnt">
+        <p class="chat" id="first" style="z-index: 5; display: none;">어...?</p>
+        <p class="chat" id="second" style="z-index: 5; display: none;">아니... 어...?<br>얼굴이...</p>
+        <p class="chat" id="third" style="z-index: 5; display: none;">(빨리 남자를 클릭해서 삭제하자.)</p>
+
+        <p class="chat" id="fourth" style="z-index: 5; display: none;">와, 뭐지?<br>야근이 진짜 사람을 이상하게 만든다.<br>하하...</p>
+        <p class="chat" id="fifth" style="z-index: 5;">잘못 본 거겠지? 뭔, 눈이... 입...이...<br>분명 잘못 본 걸 거야.<br>야근으로 지쳐버린 거라고.</p>
+        
+        
+        <img src="/img/chatbar.png" style="z-index: 4;">
+        <img id="check" src="/img/check(loveR116).png" style="z-index: 3;">
+        <img id="off" src="/img/loveRoom116(off).png" style="z-index: 2;">
+        <img id="on" src="/img/loveRoom116(on).png" style="z-index: 2; display: none;">
+        <img src="/img/videoFrame.png" style="z-index: 1;">
+        <img src="/img/monitor.png" style="z-index: 0;">
+    </div>
+
+<script>
+    window.customClickableArea = { x1: 442, x2: 594, y1: 195, y2: 416 };
+</script>
+<script src="videos.js"></script>
+</body>
+</html>
