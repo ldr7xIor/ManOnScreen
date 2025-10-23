@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const monitor = document.querySelector('img[src="../img/monitor.png"]');
-  const frame = document.querySelector('img[src="../img/videoFrame.png"]');
+  const monitor = document.getElementById("monitor");
+  const frame = document.getElementById("viewoFrame");
   const onImg = document.getElementById("on");
   const offImg = document.getElementById("off");
-  const chatBar = document.querySelector('img[src="../img/chatbar.png"]');
+  const chatBar = document.getElementById("chatBar");
   const chats = document.querySelectorAll(".chat");
   const check = document.getElementById("check");
 
